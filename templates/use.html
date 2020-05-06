@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href={{url_for('static' , filename = 'css/normalize.css')}}>
+    <link rel="stylesheet" href={{url_for('static' , filename = 'css/grid.css')}}>
+    <link rel='stylesheet' href={{url_for('static' , filename = 'css/style.css')}}>    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type='text/css'>
+    <style type="text/css">
+        .b{
+            padding-left: 10%;
+            font-weight: 300;
+            color: white;
+            font-size: x-large;
+            font-family: cursive;
+            padding-bottom: 4%;
+        }
+        ul {
+        list-style: none; /* Remove default bullets */
+        }
+
+        ul li::before {
+          content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          color: #e07d05; /* Change the color */
+          font-weight: bold; /* If you want it to be bold */
+          display: inline-block; /* Needed to add space between the bullet and the text */
+          width: 1.5em; /* Also needed for space (tweak if needed) */
+          margin-left: -1em; /* Also needed for space (tweak if needed) */
+        }
+    </style>
+</head>
+<body>
+
+
+<header style = "height: 100% , width : 100% background-image:linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.7)),url('new1.jpg');">
+    <nav>
+            <div style = "padding-right: 2%;" class = "main-nav">
+                    <li><a href ="/">HomePage</a></li>
+                    <!-- <li><a href = "#">Sign up</a></li> -->
+                
+            </div>
+               
+    </nav>
+            
+    <div>
+        <ul style = "padding-top: 14%;">
+                    
+            <li class = "b">Just upload your photo by clicking on the arrow bar .</li>
+            <li class = "b">Then hit the upload button and you'll be rendered to a new page .</li>
+            <li class = "b">Click on the download button and you will see your new blurred image .</li>
+            <li class = "b">Just hit the right click and download it !</li>
+                </ul>
+        <h2 style = "padding-left: 35%;
+            font-weight: 300;
+            color: #e07d05;
+            font-size: xx-large;
+            font-family: cursive;">Thank You !</h2>
+    </div>
+
+
+    </header>
+
+</body>
+</html>
